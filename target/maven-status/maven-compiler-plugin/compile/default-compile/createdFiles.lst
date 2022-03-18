@@ -18,5 +18,4 @@ ent\processors\BaseProcessor.class
 ent\buttons\InlineBoards.class
 ent\processors\Calculate.class
 ent\utils\Emojis.class
-ent\configs\PConfig.class
 ent\models\Currency.class

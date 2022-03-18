@@ -1,6 +1,5 @@
 package ent.main;
 
-import ent.configs.PConfig;
 import ent.handlers.UpdateHandler;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
@@ -18,12 +17,12 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return PConfig.get("bot.link");
+        return "@currency_cbot";
     }
 
     @Override
     public String getBotToken() {
-        return PConfig.get("bot.token");
+        return "5206559611:AAGT6oNxwD8auisggQ9ksNqCiRBAiKQjKF8";
     }
 
     @Override
