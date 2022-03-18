@@ -38,9 +38,12 @@ public class Calculate implements BaseProcessor {
         }
         currencyJson.forEach(currency -> {
             switch (currency.getCcy()) {
-                case "USD" -> USD = currency;
-                case "EUR" -> EUR = currency;
-                case "RUB" -> RUB = currency;
+                case "USD":
+                    USD = currency;
+                case "EUR":
+                    EUR = currency;
+                case "RUB":
+                    RUB = currency;
             }
         });
     }
