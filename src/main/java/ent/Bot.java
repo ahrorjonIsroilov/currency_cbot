@@ -1,4 +1,4 @@
-package ent.main;
+package ent;
 
 import ent.handlers.UpdateHandler;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;

@@ -1,1 +1,1 @@
-web: java -jar target/Currency-1.jar
+web: java -jar out/artifacts/currency_bot_jar/currency_bot.jar

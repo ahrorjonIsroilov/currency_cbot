@@ -1,6 +1,6 @@
 package ent.handlers;
 
-import ent.main.Bot;
+import ent.Bot;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
