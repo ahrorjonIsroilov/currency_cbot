@@ -1,4 +1,4 @@
-package ent.y.main;
+package ent.main;
 
 import ent.configs.PConfig;
 import ent.handlers.UpdateHandler;

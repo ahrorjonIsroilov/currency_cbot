@@ -1,4 +1,4 @@
-package ent.y.main;
+package ent.main;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
