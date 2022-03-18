@@ -4,7 +4,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
-import java.util.List;
+import java.util.Arrays;
 
 import static ent.utils.Emojis.*;
 
@@ -21,7 +21,7 @@ public class MarkupBoards {
         row2.add(new KeyboardButton(eEN + " USD"));
         row2.add(new KeyboardButton(eEUR + " EUR"));
         row3.add(new KeyboardButton(eCASH + " Exchange rates"));
-        board.setKeyboard(List.of(row1, row2, row3));
+        board.setKeyboard(Arrays.asList(row1, row2, row3));
         board.setResizeKeyboard(true);
         board.setSelective(true);
         return board;

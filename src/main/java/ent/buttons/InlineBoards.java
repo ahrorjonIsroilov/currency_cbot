@@ -4,7 +4,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMa
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class InlineBoards {
     private static final InlineKeyboardMarkup board = new InlineKeyboardMarkup();
@@ -18,9 +18,9 @@ public class InlineBoards {
         _100.setCallbackData("100");
         InlineKeyboardButton _1000 = new InlineKeyboardButton("1000");
         _1000.setCallbackData("1000");
-        ArrayList<InlineKeyboardButton> row1 = new ArrayList<>(List.of(_10, _50));
-        ArrayList<InlineKeyboardButton> row2 = new ArrayList<>(List.of(_100, _1000));
-        board.setKeyboard(List.of(row1, row2));
+        ArrayList<InlineKeyboardButton> row1 = new ArrayList<>(Arrays.asList(_10, _50));
+        ArrayList<InlineKeyboardButton> row2 = new ArrayList<>(Arrays.asList(_100, _1000));
+        board.setKeyboard(Arrays.asList(row1, row2));
         return board;
     }
 }

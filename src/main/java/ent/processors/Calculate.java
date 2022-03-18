@@ -14,7 +14,7 @@ import java.lang.reflect.Type;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 @Getter
 @Setter
@@ -55,7 +55,7 @@ public class Calculate implements BaseProcessor {
         Float eur = value / (EUR.getRate());
         Float rub = value / (RUB.getRate());
         currencies.clear();
-        currencies.addAll(List.of(usd, eur, rub));
+        currencies.addAll(Arrays.asList(usd, eur, rub));
         return currencies;
     }
 
@@ -65,7 +65,7 @@ public class Calculate implements BaseProcessor {
         Float eur = (value * (USD.getRate())) / (EUR.getRate());
         Float rub = (value * (USD.getRate())) / (RUB.getRate());
         currencies.clear();
-        currencies.addAll(List.of(uzs, eur, rub));
+        currencies.addAll(Arrays.asList(uzs, eur, rub));
         return currencies;
     }
 
@@ -75,7 +75,7 @@ public class Calculate implements BaseProcessor {
         Float usd = (value * (EUR.getRate())) / (USD.getRate());
         Float rub = (value * (EUR.getRate())) / (RUB.getRate());
         currencies.clear();
-        currencies.addAll(List.of(uzs, usd, rub));
+        currencies.addAll(Arrays.asList(uzs, usd, rub));
         return currencies;
     }
 
@@ -85,7 +85,7 @@ public class Calculate implements BaseProcessor {
         Float usd = (value * (RUB.getRate())) / (USD.getRate());
         Float eur = (value * (RUB.getRate())) / (EUR.getRate());
         currencies.clear();
-        currencies.addAll(List.of(uzs, usd, eur));
+        currencies.addAll(Arrays.asList(uzs, usd, eur));
         return currencies;
     }
 
@@ -95,7 +95,7 @@ public class Calculate implements BaseProcessor {
         Float eur = (EUR.getRate());
         Float rub = (RUB.getRate());
         currencies.clear();
-        currencies.addAll(List.of(usd, eur, rub));
+        currencies.addAll(Arrays.asList(usd, eur, rub));
         return currencies;
     }
 
